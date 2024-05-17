@@ -10,6 +10,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import photo from "../public/photo00.jpg";
+import Typewriter from 'typewriter-effect';
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -49,9 +50,19 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold font-serif">Hello,</span> <span> I'm </span> <span className="font-serif font-bold"> Burhanuddin Kapdiya.</span><br/> I'm a{" "}
-        <span className="font-bold font-serif">Full-Stack Developer.</span>
-        <br /><span className="font-sans" >I enjoy building</span> <span className="font-sans italic">Websites</span>
+         <div style={{ whiteSpace:'pre-line', fontFamily:'sans-serif', fontSize: '1.1em' }}>
+      <Typewriter
+        options={{
+          strings: [
+            `<strong>Hello,</strong> I'm <strong>Burhanuddin Kapdiya.</strong>\nI'm a <strong>Full-Stack Developer</strong>.\nI enjoy building <em>Websites</em>.`
+          ],
+          autoStart: true,
+          loop: true,
+          delay: 50,
+          deleteSpeed: 30
+            }}
+      />
+    </div>
       </motion.h1>
 
       <motion.div

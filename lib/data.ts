@@ -35,6 +35,14 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Institue of Engineering and Technology, Davv",
+    location: "Indore, IND",
+    description:
+      "I completed my Bachlor's of Engineering with Specialization in Mechanical Engineerig From IET DAVV Indore.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020 - 2024",
+  },
+  {
     title: "Web Developer Intern at Tronix TechIt",
     location: "Remote",
     description:
@@ -51,14 +59,7 @@ export const experiencesData = [
     date: "Oct'23 - Dec'23",
   },
  
-  {
-    title: "Institue of Engineering and Technology, Davv",
-    location: "Indore, IND",
-    description:
-      "I completed my Bachlor's of Engineering with Specialization in Mechanical Engineerig From IET DAVV Indore.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2024",
-  }
+ 
 ] as const;
 
 export const projectsData = [
